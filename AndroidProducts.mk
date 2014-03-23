@@ -17,4 +17,4 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_d801.mk \
     $(LOCAL_DIR)/full_d801.mk \
-    $(LOCAL_DIR)/omni_d801.mk
+    $(LOCAL_DIR)/du_d801.mk

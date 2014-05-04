@@ -1,5 +1,5 @@
 #
-# Copyright 2012 The Android Open Source Project
+# Copyright 2013 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,16 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+$(call inherit-product, device/lge/d801/full_d801.mk)
 
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-
-PRODUCT_DEVICE := d801
 PRODUCT_NAME := aosp_d801
-PRODUCT_BRAND := LGE
-PRODUCT_MODEL := LG-D801
-PRODUCT_MANUFACTURER := lge
-PRODUCT_RESTRICT_VENDOR_FILES := false
+
+PRODUCT_PACKAGES += \
+    Launcher3
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/lge/d801/device.mk)
